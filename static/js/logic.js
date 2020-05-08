@@ -20,7 +20,7 @@ d3.json(link, function(data) {
 function createFeatures(data) {
 
   function onEachFeature(feature, layer) {
-      layer.bindPopup ("<h2>Magnitude: " + feature.properties.mag);
+      layer.bindPopup (feature.properties.mag);
   }
 
 
